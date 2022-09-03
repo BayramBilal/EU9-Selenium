@@ -1,4 +1,4 @@
-package com.cydeo.tests.day5_TetsNg_Intro_Dropdowns;
+package com.cydeo.tests.utilities.Day5_Tasks;
 
 import com.cydeo.tests.utilities.WebDriverFactory;
 import org.openqa.selenium.By;
@@ -37,11 +37,6 @@ public class T8_MultipleSelectDropdown {
         for (WebElement eachValues : allValues) {
             eachValues.click();
             System.out.println(eachValues.getText());
-<<<<<<< HEAD
-
-=======
->>>>>>> github/master
-           
         }
         languagesDropdown.deselectAll();
 
