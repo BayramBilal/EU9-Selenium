@@ -37,10 +37,7 @@ public class T8_MultipleSelectDropdown {
         for (WebElement eachValues : allValues) {
             eachValues.click();
             System.out.println(eachValues.getText());
-<<<<<<< HEAD
 
-=======
->>>>>>> github/master
            
         }
         languagesDropdown.deselectAll();
