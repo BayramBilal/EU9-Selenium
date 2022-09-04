@@ -29,7 +29,7 @@ public class T2_RadioButton {
 
         //4. Verify “Hockey” radio button is selected after clicking.
 
-        System.out.println("after clicking hockey button ,hockeyButton.isSelected() = " + hockeyButton.isSelected());
+        System.out.println("after clicking hockey button, hockeyButton.isSelected() = " + hockeyButton.isSelected());
         //USE XPATH LOCATOR FOR ALL WEBELEMENT LOCATORS
         driver.close();
     }

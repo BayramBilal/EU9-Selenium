@@ -48,15 +48,15 @@ public class T7_NonSelectDropdown {
 
 
         //5. Verify title is “Facebook - Log In or Sign Up
+        String actualFacebookBtnText = facebookButton.getText();
+        String expectedFacebookBtnText = "Facebook - Log In or Sign Up";
 
-        Assert.assertEquals((facebookButton.getText()),"Facebook - Log In or Sign Up","Title doesnt match");
-
-}
-    @AfterMethod
-    public void tearDown(){
-        driver.close();
+       Assert.assertEquals((facebookButton.getText()),"Facebook - Log In or Sign Up","Title doesnt match");
+      //  Assert.assertEquals (actualFacebookBtnText, expectedFacebookBtnText);
 
 }
 
 
 }
+
+

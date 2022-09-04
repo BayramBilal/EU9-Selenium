@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class T3_Continuation_T2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
 
         //XPATH PRACTICES
         //DO NOT USE ANY DEVELOPER TOOLS TO GET ANY LOCATORS.
@@ -25,9 +25,14 @@ public class T3_Continuation_T2 {
 
         //3. Click to “Hockey” radio button
         //4. Verify “Hockey” radio button is selected after clicking.
-
+        Thread.sleep(2000);
         clickAndVerifyRadioButton(driver, "sport","football");
+        Thread.sleep(2000);
         clickAndVerifyRadioButton(driver, "color","yellow");
+        Thread.sleep(2000);
+        clickAndVerifyRadioButton(driver, "sport","basketball");
+        Thread.sleep(2000);
+        clickAndVerifyRadioButton(driver, "color","red");
 
 
     }

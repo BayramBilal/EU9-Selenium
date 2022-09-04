@@ -29,7 +29,7 @@ public class T8_MultipleSelectDropdown {
 }
 
     @Test
-    public void multipleSelectDropdown() {
+    public void multipleSelectDropdown() throws InterruptedException {
 
       Select languagesDropdown=new Select(driver.findElement(By.name("Languages")));
 
@@ -43,6 +43,14 @@ public class T8_MultipleSelectDropdown {
         languagesDropdown.deselectAll();
 
 
+        Thread.sleep(3000);
+        languagesDropdown.selectByVisibleText("Java");
+        Thread.sleep(3000);
+        languagesDropdown.selectByVisibleText("JavaScript");
+        Thread.sleep(3000);
+        languagesDropdown.selectByValue("python");
+        Thread.sleep(3000);
+        languagesDropdown.selectByIndex(4);
 
 
 

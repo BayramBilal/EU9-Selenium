@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -44,8 +45,9 @@ public class T4_SimpleDropdowns {
         String actualDefaultSimpleDropdownText=  currentlySelectedOption .getText();
         String expectedDefaultSimpleDropdownText="Please select an option";
 
-        Assert.assertEquals(actualDefaultSimpleDropdownText,expectedDefaultSimpleDropdownText);
+        // Assert.assertEquals(actualDefaultSimpleDropdownText,expectedDefaultSimpleDropdownText);
 
+        Assert.assertEquals(simpleDropdown.getFirstSelectedOption().getText(), "Please select an option");
 
         //4. Verify “State selection” default selected value is correct
         //Expected: “Select a State” */
@@ -58,8 +60,10 @@ public class T4_SimpleDropdowns {
 
 
     }
-
-
+    @AfterMethod
+    public void tearDown(){
+        driver.close();
+    }
 }
 /*
 TC#4: Verifying “Simple dropdown” and “State selection” dropdown
