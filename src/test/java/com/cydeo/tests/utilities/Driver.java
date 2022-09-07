@@ -1,5 +1,4 @@
 package com.cydeo.tests.utilities;
-
 import io.github.bonigarcia.wdm.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
