@@ -17,7 +17,7 @@ public class T1_WebTable_Order_Verify {
 public WebDriver driver;
     @BeforeMethod
     public void setupMethod(){
-              driver = WebDriverFactory.getDriver("chrome");
+        driver = WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
      //1. Go to: https://practice.cydeo.com/web-tables

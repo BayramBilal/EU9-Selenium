@@ -39,7 +39,7 @@ public class WebTableUtils {
     public static void orderVerify(WebDriver driver, String customerName, String expectedOrderDate){
 
         String locator = "//td[.='"+customerName+"']/following-sibling::td[3]";
-        WebElement customerDateCell = driver.findElement(By.xpath(locator));
+        WebElement customerDateCell = driver.findElement(By.xpath("locator"));
 
         String actualOrderDate = customerDateCell.getText();
 
