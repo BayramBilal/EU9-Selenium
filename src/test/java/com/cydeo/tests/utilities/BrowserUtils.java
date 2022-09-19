@@ -4,6 +4,7 @@ package com.cydeo.tests.utilities;
 In this class only general utility methods that are NOT related to some specific page.
  */
 
+import com.cydeo.tests.utilities.Driver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 import org.testng.*;

@@ -1,5 +1,6 @@
 package com.cydeo.tests.day7_webtables_utilities_javafaker;
 
+import com.cydeo.tests.utilities.BrowserUtils;
 import com.cydeo.tests.utilities.*;
 import org.openqa.selenium.*;
 import org.testng.annotations.*;
