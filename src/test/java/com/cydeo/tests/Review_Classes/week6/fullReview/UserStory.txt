@@ -1,0 +1,20 @@
+Registration User Story
+
+TC1:
+User go to Registration page, validate below information:
+scroll down , up
+
+Navigate back, forward, refresh page, then page url should be https://practice.cydeo.com/registration_form
+Page title is Registration form
+Page url is https://practice.cydeo.com/registration_form
+Home link is present
+CYDEO link is clickable
+Title is Registration Page
+Gender has 3 option to choose
+Department/Office drop down have the following options: ["Select your Department/Office","Department of Engineering","Department of Agriculture","Accounting Office","Tresurer's Office","MCTC","MCR","Mayor's Office","Tourism Office"]
+
+TC2:
+ fill the form using random credentials, validate success message as "You've successfully completed registration!".
+
+ findElement :  return one single webElement, if no, return NoSuchElementException.
+ findElements:  return multiple webElemetns as a List, if no, return empty List,not return exception.

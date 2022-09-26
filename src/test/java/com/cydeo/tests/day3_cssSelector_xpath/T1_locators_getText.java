@@ -32,6 +32,8 @@ public class T1_locators_getText {
         //5- Click to log in button.
         WebElement loginButton = driver.findElement(By.className("login-btn"));
         loginButton.click();
+        WebElement email = driver.findElement(By.linkText("E-mail"));
+        loginButton.click();
 
         //6- Verify error message text is as expected:
         //Expected: Incorrect login or password
